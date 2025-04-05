@@ -1,0 +1,22 @@
+namespace: default
+
+backend:
+  image: uzair/backend:latest
+  replicas: 1
+  port: 5000
+
+frontend:
+  image: uzair/frontend:latest
+  replicas: 1
+  port: 3000
+
+db:
+  image: postgres:13
+  storage: 1Gi
+  port: 5432
+  user: postgres
+  password: password
+  name: portfolio_db
+
+ingress:
+  host: devops.local

@@ -1,0 +1,12 @@
+namespace: prod
+
+backend:
+  image: uzair/backend:prod
+  replicas: 3
+
+frontend:
+  image: uzair/frontend:prod
+  replicas: 2
+
+ingress:
+  host: prod.devops.local

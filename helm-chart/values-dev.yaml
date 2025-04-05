@@ -1,0 +1,12 @@
+namespace: dev
+
+backend:
+  image: uzair/backend:dev
+  replicas: 1
+
+frontend:
+  image: uzair/frontend:dev
+  replicas: 1
+
+ingress:
+  host: dev.devops.local
